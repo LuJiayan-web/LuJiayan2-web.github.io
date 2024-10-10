@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自动轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+ 
+        section {
+            position: relative;
+            /* 图片的宽高 */
+            width: 1920px;
+            height: 500px;
+            /* background-color: rgb(90, 71, 71); */
+            margin: 50px auto;
+            overflow: hidden;
+        }
+ 
+        ul {
+            position: absolute;
+            display: flex;
+            /* 动画效果循环轮播10s一次 */
+            animation: move 10s infinite;
+        }
+ 
+        @keyframes move {
+            0% {
+                left: 0%;
+            }
+ 
+            15% {
+                left: 0%;
+            }
+ 
+            20% {
+                left: -100%;
+            }
+ 
+            35% {
+                left: -100%;
+            }
+ 
+            40% {
+                left: -200%;
+            }
+ 
+            55% {
+                left: -200%;
+            }
+ 
+            60% {
+                left: -300%;
+            }
+ 
+            75% {
+                left: -300%;
+            }
+ 
+            80% {
+                left: -400%;
+            }
+ 
+            100% {
+                left: -400%;
+            }
+        }
+    </style>
+</head>
+ 
+<body>
+    <section>
+        <!-- 平移轮播 -->
+        <ul>
+            <li>
+                <img src="https://gitee.com/lylujiayan/demo/blob/master/imgs/01.jpg" alt="">
+            </li>
+ 
+            <li>
+                <img src="https://gitee.com/lylujiayan/demo/blob/master/imgs/02.jpg" alt="">
+            </li>
+ 
+            <li>
+                <img src="https://gitee.com/lylujiayan/demo/blob/master/imgs/03.jpg" alt="">
+            </li>
+            <li>
+                <img src="https://gitee.com/lylujiayan/demo/blob/master/imgs/04.jpg" alt="">
+            </li><li>
+                <img src="https://gitee.com/lylujiayan/demo/blob/master/imgs/01.jpg" alt="">
+            </li>
+           
+        </ul>
+    </section>
+</body>
+ 
+</html>
